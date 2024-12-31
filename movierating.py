@@ -25,7 +25,7 @@ plt.title('Number of Missing Values Per Column')
 plt.ylabel('Count of Missing Values')
 plt.xlabel('Columns')
 plt.xticks(rotation=45)
-#plt.show()
+plt.show()
 
 # Distribution of numeric features
 numeric_columns = ['Year', 'Duration', 'Votes', 'Rating']
@@ -35,7 +35,7 @@ for column in numeric_columns:
     plt.title(f'Distribution of {column}')
     plt.xlabel(column)
     plt.ylabel('Frequency')
-    #plt.show()
+    plt.show()
 
 # Count plots for categorical features
 categorical_columns = ['Genre', 'Director', 'Actor 1', 'Actor 2', 'Actor 3']
@@ -46,7 +46,7 @@ for column in categorical_columns:
     plt.ylabel('Frequency')
     plt.xlabel(column)
     plt.xticks(rotation=45)
-    #plt.show()
+    plt.show()
 
 # Analyze missing data
 print("Missing values in each column:")
